@@ -20,7 +20,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
     bgReady = true;
 };
-bgImage.src = "images/bg.png";
+bgImage.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/bg.png?raw=true";
 
 // Hero image
 var heroReady = false;
@@ -28,7 +28,7 @@ var heroImage = new Image();
 heroImage.onload = function () {
     heroReady = true;
 };
-heroImage.src = "images/hero.png";
+heroImage.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/hero.png?raw=true";
 
 // diamond image
 var diamondReady = false;
@@ -36,7 +36,7 @@ var diamondImage = new Image();
 diamondImage.onload = function () {
     diamondReady = true;
 };
-diamondImage.src = "images/diamond.png";
+diamondImage.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/diamond.png?raw=true";
 
 // ghost1
 var ghost1Ready = false;
@@ -44,7 +44,7 @@ var ghostImage = new Image();
 ghostImage.onload = function () {
     ghost1Ready = true;
 };
-ghostImage.src = "images/ghost322.png";
+ghostImage.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/ghost322.png?raw=true";
 
 // ghost2
 var ghost2Ready = false;
@@ -52,7 +52,7 @@ var ghost2Image = new Image();
 ghost2Image.onload = function () {
     ghost2Ready = true;
 };
-ghost2Image.src = "images/ghost322.png";
+ghost2Image.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/ghost322.png?raw=true";
 
 // ghost3
 var ghost3Ready = false;
@@ -60,7 +60,7 @@ var ghost3Image = new Image();
 ghost3Image.onload = function () {
     ghost3Ready = true;
 };
-ghost3Image.src = "images/ghost322.png";
+ghost3Image.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/ghost322.png?raw=true";
 
 // ghost4
 var ghost4Ready = false;
@@ -68,7 +68,7 @@ var ghost4Image = new Image();
 ghost4Image.onload = function () {
     ghost4Ready = true;
 };
-ghost4Image.src = "images/ghost322.png";
+ghost4Image.src = "https://github.com/pedram-ghazi/pedram-ghazi.github.io/blob/master/images/ghost322.png?raw=true";
 
 // Game objects
 var hero = {
