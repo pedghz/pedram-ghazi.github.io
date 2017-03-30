@@ -6,7 +6,7 @@ var surface, currentScreen;
 surface = canvas.getContext('2d');
 canvas.width = 512;
 canvas.height = 480;
-canvas.setIdAttribute('canvas', true);
+// canvas.setIdAttribute('canvas', true);
 document.body.appendChild(canvas);
 
 // Variables
