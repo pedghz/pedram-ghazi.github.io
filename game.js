@@ -386,6 +386,11 @@ currentScreen = (function () {
                 || hero.x <= (ghost3.x + 24) && ghost3.x <= (hero.x + 24) && hero.y <= (ghost3.y + 24) && ghost3.y <= (hero.y + 24)
                 || hero.x <= (ghost4.x + 24) && ghost4.x <= (hero.x + 24) && hero.y <= (ghost4.y + 24) && ghost4.y <= (hero.y + 24)
             ) {
+                var message = {
+                    messageType: "SCORE",
+                    score: diamondsCollected
+                };
+                parent.postMessage(message,'*');
                 max_score = diamondsCollected;
                 diamondsCollected = 0;
                 console.log(max_score);
