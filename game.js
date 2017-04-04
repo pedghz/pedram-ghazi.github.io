@@ -1,4 +1,14 @@
-var playerID = 0;
+var message = {};
+
+message = {
+    messageType: "SETTING",
+    options: {
+        "width": 480, //Integer
+        "height": 512 //Integer
+    }
+};
+parent.postMessage(message,'*');
+
 
 // Creating the canvas
 var canvas = document.createElement("canvas");
@@ -6,7 +16,6 @@ var surface, currentScreen;
 surface = canvas.getContext('2d');
 canvas.width = 512;
 canvas.height = 480;
-// canvas.setIdAttribute('canvas', true);
 document.body.appendChild(canvas);
 
 // Variables
@@ -169,9 +178,8 @@ function checkStart(e) {
     if (screenNum == 0) {
         if (p.y >= canvas.height * 0.5) {
             console.log('Load Game');
-            var message = {
+            message = {
                 messageType: "LOAD_REQUEST",
-                playerID: playerID,
             };
             parent.postMessage(message,'*');
 
@@ -182,7 +190,7 @@ function checkStart(e) {
         }
     } else if(screenNum == 1) {
         console.log('Game saved');
-        var message =  {
+        message =  {
             messageType: "SAVE",
             gameState: {
                 playerPos: {
