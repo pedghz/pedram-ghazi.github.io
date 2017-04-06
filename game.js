@@ -185,7 +185,9 @@ function checkStart(e) {
             window.addEventListener("message", receiveMessage, false);
             function receiveMessage(event)
             {
+
                 console.log('Message Recieved.');
+                
                 var flag = false;
                 while(flag==false)
                 {
