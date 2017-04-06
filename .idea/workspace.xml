@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcf3a751-08c9-4f63-aa68-3d35ba904ed5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.js" afterPath="$PROJECT_DIR$/game.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +21,9 @@
       <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="389" column="39" lean-forward="false" selection-start-line="389" selection-start-column="34" selection-end-line="389" selection-end-column="39" />
+            <state relative-caret-position="650">
+              <caret line="192" column="58" lean-forward="false" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="58" />
               <folding>
-                <element signature="e#4262#4617#0" expanded="false" />
-                <element signature="e#4698#5541#0" expanded="false" />
                 <element signature="n#!!block;n#getMousePos#0" expanded="false" />
               </folding>
             </state>
@@ -35,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -49,6 +48,14 @@
       <find>message</find>
       <find>var message</find>
       <find>score</find>
+      <find>console</find>
+      <find>max_s</find>
+      <find>load</find>
+      <find>messageType</find>
+      <find>messageT</find>
+      <find>postmess</find>
+      <find>save</find>
+      <find>dia</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,6 +151,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -178,12 +191,13 @@
       <option name="presentableId" value="Default" />
       <updated>1490908545195</updated>
       <workItem from="1490908547312" duration="1173000" />
-      <workItem from="1491314210079" duration="6861000" />
+      <workItem from="1491314210079" duration="7173000" />
+      <workItem from="1491485819768" duration="7344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8034000" />
+    <option name="totallyTimeSpent" value="15690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
@@ -221,11 +235,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/game.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#getMousePos#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#4262#4617#0" expanded="false" />
-            <element signature="e#4698#5541#0" expanded="false" />
             <element signature="n#!!block;n#getMousePos#0" expanded="false" />
           </folding>
         </state>
@@ -242,18 +272,24 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="1034" column="0" lean-forward="false" selection-start-line="1034" selection-start-column="0" selection-end-line="1034" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="389" column="39" lean-forward="false" selection-start-line="389" selection-start-column="34" selection-end-line="389" selection-end-column="39" />
+        <state relative-caret-position="650">
+          <caret line="192" column="58" lean-forward="false" selection-start-line="192" selection-start-column="49" selection-end-line="192" selection-end-column="58" />
           <folding>
-            <element signature="e#4262#4617#0" expanded="false" />
-            <element signature="e#4698#5541#0" expanded="false" />
             <element signature="n#!!block;n#getMousePos#0" expanded="false" />
           </folding>
         </state>

@@ -182,6 +182,19 @@ function checkStart(e) {
                 messageType: "LOAD_REQUEST",
             };
             parent.postMessage(message,'*');
+            window.addEventListener("message", receiveMessage, false);
+            function receiveMessage(event)
+            {
+                var flag = false;
+                while(flag==false)
+                {
+                    if (data.messageType == "LOAD")
+                    {
+                        diamondsCollected = data.gameState.score;
+                        flag=true;
+                    }
+                }
+            }
 
             mouseJustClicked = true;
         } else {
