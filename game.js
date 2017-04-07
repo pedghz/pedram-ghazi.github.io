@@ -182,24 +182,15 @@ function checkStart(e) {
                 messageType: "LOAD_REQUEST",
             };
             parent.postMessage(message,'*');
-            window.addEventListener("message", receiveMessage, false);
-            function receiveMessage(event)
-            {
-
-                console.log('Message Recieved.');
-                
-                var flag = false;
-                while(flag==false)
-                {
-                    if (data.messageType == "LOAD")
-                    {
-                        diamondsCollected = data.gameState.score;
-                        flag=true;
-                    }
+            // Listen incoming messages, and load the game
+            window.addEventListener("message", function(evt) {
+                if(evt.data.messageType == "LOAD") {
+                    loadGame(evt.data.gameState);
+                } else if (evt.data.messageType == "ERROR") {
+                    alert(evt.data.text);
                 }
-            }
-
-            mouseJustClicked = true;
+            });
+            // mouseJustClicked = true;
         } else {
             console.log('New Game');
             mouseJustClicked = true;
@@ -235,11 +226,28 @@ function checkStart(e) {
                 },
                 score: diamondsCollected
             },
-            playerID: playerID,
         };
         parent.postMessage(message,'*');
         mouseJustClicked = true;
     }
+}
+
+function loadGame(data){
+    hero.x = data.playerPos.x;
+    hero.y = data.playerPos.y;
+    ghost1.x = data.ghost1.x;
+    ghost1.y = data.ghost1.y;
+    ghost2.x = data.ghost2.x;
+    ghost2.y = data.ghost2.y;
+    ghost3.x = data.ghost3.x;
+    ghost3.y = data.ghost3.y;
+    ghost4.x = data.ghost4.x;
+    ghost4.y = data.ghost4.y;
+    diamond.x = data.diamond.x;
+    diamond.y = data.diamond.y;
+    diamondsCollected = data.score;
+
+    mouseJustClicked = true;
 }
 
 function getMousePos(e) {
@@ -409,7 +417,6 @@ currentScreen = (function () {
                 parent.postMessage(message,'*');
                 max_score = diamondsCollected;
                 diamondsCollected = 0;
-                console.log(max_score);
                 reset();
             }
         }
