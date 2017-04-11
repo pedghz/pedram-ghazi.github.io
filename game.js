@@ -226,6 +226,7 @@ function checkStart(e) {
                 },
                 score: diamondsCollected
             },
+            score: diamondsCollected,
         };
         parent.postMessage(message,'*');
         mouseJustClicked = true;
